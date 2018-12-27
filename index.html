@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta content="text/html; charset=iso-8859-2" http-equiv="Content-Type">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+.mySlides {display:none;}
+</style>
+<head>
+	<title>Sistem Informasi Display SPs IPB</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--===============================================================================================-->	
+	<link rel="icon" type="image/png" href="images/icons/favicon.ico"/>
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="fonts/Linearicons-Free-v1.0.0/icon-font.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
+<!--===============================================================================================-->	
+	<link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/animsition/css/animsition.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
+<!--===============================================================================================-->	
+	<link rel="stylesheet" type="text/css" href="vendor/daterangepicker/daterangepicker.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="css/util.css">
+	<link rel="stylesheet" type="text/css" href="css/footer.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+<!--===============================================================================================-->
+</head>
+<body style="background-color: #666666;">
+	
+	<div class="limiter">
+		<div class="container-login100">
+			<div class="wrap-login100">
+				<form class="login100-form validate-form" style="background-image: url('images/ipb.jpg');">
+				<center><img src="images/ipb.png" width="150" height="150"/>
+				<br><br><h6><b>Sekolah Pascasarjana IPB</b></h6>
+				<br><br><h6><b>Waktu Pukul:</b></h6><script type="text/javascript">
+ window.onload = function() { jam(); }
+
+ function jam() {
+  var e = document.getElementById('jam'),
+  d = new Date(), h, m, s;
+  h = d.getHours();
+  m = set(d.getMinutes());
+  s = set(d.getSeconds());
+
+  e.innerHTML = h +':'+ m +':'+ s;
+
+  setTimeout('jam()', 1000);
+ }
+
+ function set(e) {
+  e = e < 10 ? '0'+ e : e;
+  return e;
+ }
+</script>
+</head>
+<body>
+<center>
+<h1 style="font-size: 40px; font-family: arial; color:#FFF; background:#97989d" id="jam"></h1>
+</center><br>
+<script type='text/javascript'>
+window.setTimeout("hari()",0)
+function hari(){
+ var namah = new Array("Minggu", "Senin", "Selasa", "Rabu", "Kamis", "Jum'at", "Sabtu");
+ var namab = new Array("Januari", "Februari", "Maret", "April", "Mei", "Juni", "Juli", "Agustus", "September", "Oktober", "November", "Desember");
+ var tanggal = new Date();
+ setTimeout("hari()",0);
+ document.getElementById("dino").innerHTML =namah[tanggal.getDay()]+", "+tanggal.getDate()+" "+namab[tanggal.getMonth()]+" "+tanggal.getFullYear();
+}
+</script>
+<div style="color : white;font-size: 16pt" id='dino'></div></center>
+					<!--<span class="login100-form-title p-b-43">
+						Login to continue
+					</span>
+					
+					
+					<div class="wrap-input100 validate-input" data-validate = "Valid email is required: ex@abc.xyz">
+						<input class="input100" type="text" name="email">
+						<span class="focus-input100"></span>
+						<span class="label-input100">Email</span>
+					</div>
+					
+					
+					<div class="wrap-input100 validate-input" data-validate="Password is required">
+						<input class="input100" type="password" name="pass">
+						<span class="focus-input100"></span>
+						<span class="label-input100">Password</span>
+					</div>
+
+					<div class="flex-sb-m w-full p-t-3 p-b-32">
+						<div class="contact100-form-checkbox">
+							<input class="input-checkbox100" id="ckb1" type="checkbox" name="remember-me">
+							<label class="label-checkbox100" for="ckb1">
+								Remember me
+							</label>
+						</div>
+
+						<div>
+							<a href="#" class="txt1">
+								Forgot Password?
+							</a>
+						</div>
+					</div>
+			
+
+					<div class="container-login100-form-btn">
+						<button class="login100-form-btn">
+							Login
+						</button>
+					</div>
+					
+					<div class="text-center p-t-46 p-b-20">
+						<span class="txt2">
+							or sign up using
+						</span>
+					</div>
+
+					<div class="login100-form-social flex-c-m">
+						<a href="#" class="login100-form-social-item flex-c-m bg1 m-r-5">
+							<i class="fa fa-facebook-f" aria-hidden="true"></i>
+						</a>
+
+						<a href="#" class="login100-form-social-item flex-c-m bg2 m-r-5">
+							<i class="fa fa-twitter" aria-hidden="true"></i>
+						</a>
+					</div>!-->
+				</form>
+
+				<div class="login100-more" style="background-image: url('images/bg-03.jpg');">
+				<div class="w3-content w3-section" style="max-width:1366px">
+  <br><br><br><img class="mySlides" src="images/bg-01.jpg" style="width:100%">
+  <img class="mySlides" src="images/bg-04.jpg" style="width:100%">
+  <img class="mySlides" src="images/bg-05.jpg" style="width:100%">
+  <img class="mySlides" src="images/bg-06.jpg" style="width:100%">
+  
+</div>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 10000); // Change image every 10 seconds
+}
+</script>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<!-- Footer -->
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+
+<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+
+
+<!--footer-->
+<footer class="footer1">
+<center><a href="images/web.png" target="_blank"><img src= "https://cdn1.iconfinder.com/data/icons/unique-round-blue/93/globe-512.png" alt="Facebook" width="35" height="35"/>&nbsp;:&nbsp;<b>pasca.ipb.ac.id</b></a>&nbsp;&nbsp;&nbsp;&nbsp;
+<!-- <a href="http://www.facebook.com/pages/Sekolah-Pascasarjana-IPB-Official/85628954591" target="_blank"><img src= "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/F_icon.svg/2000px-F_icon.svg.png" alt="Facebook" width="35" height="35"/>&nbsp;:&nbsp;<b>Sekolah Pascasarjana IPB - Official</b></a>&nbsp;&nbsp;&nbsp;&nbsp; -->
+<a href="https://twitter.com/spsipb" target="_blank"><img src= "images/twitter.png" alt="Twitter" width="35" height="35"/>&nbsp;:&nbsp;<b>@spsipb</b></a>&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="https://www.youtube.com/watch?v=7iuA4R2xMKs" target="_blank"><img src= "images/youtube.png" alt="Youtube" width="35" height="35"/>&nbsp;:&nbsp;<b>Pascasarjana Ipb
+</b></a>&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="https://www.instagram.com/pascaipb/?hl=id" target="_blank"><img src= "images/instagram.png" alt="Instagram" width="35" height="35"/>&nbsp;:&nbsp;<b>pascaipb</b></a>
+&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="https://www.instagram.com/pascaipb/?hl=id" target="_blank"><img src= "images/email.png" alt="Instagram" width="35" height="35"/>&nbsp;:&nbsp;<b>pascasarjana@apps.ipb.ac.id</b></a>
+&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="https://www.instagram.com/pascaipb/?hl=id" target="_blank"><img src= "images/telpon.png" alt="Instagram" width="35" height="35"/>&nbsp;:&nbsp;<b>+62-251-8628448 / 8423855</b></a></center>
+<!-- <div class="container">
+
+<div class="row">
+            
+                
+                
+                
+                <div class="col-sm-3">
+                
+                   
+                    
+                        <ul class="list-unstyled clear-margins">
+                        
+                        	<li class="widget-container widget_recent_news">
+                    
+                                
+                                <div class="social-icons">
+                                
+                                	<ul class="nomargin">
+                                    
+                <a href="https://www.facebook.com/bootsnipp"><i class="fa fa-facebook-square fa-3x social-fb" id="social"></i></a>
+	            <a href="https://twitter.com/bootsnipp"><i class="fa fa-twitter-square fa-3x social-tw" id="social"></i>@spsipb</a>
+	            <a href="https://plus.google.com/+Bootsnipp-page"><i class="fa fa-google-plus-square fa-3x social-gp" id="social"></i></a>
+	            <a href="mailto:bootsnipp@gmail.com"><i class="fa fa-envelope-square fa-3x social-em" id="social"></i></a>
+                                    
+                                    </ul>
+                                </div>
+                    		</li>
+                          </ul>
+                       </div>
+                </div>
+</div> -->
+</footer>
+<!--header-->
+
+<div class="footer-bottom">
+<marquee>Berita Baris SPs IPB</marquee>
+	<!-- <div class="container">
+		<div class="row">
+<div class="copyright">
+
+				<marquee>© 2015, Webenlance, All rights reserved</marquee>
+	
+
+				</div>
+			
+
+			<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+
+				<div class="design">
+
+					 <a href="#">Franchisee </a> |  <a target="_blank" href="http://www.webenlance.com">Web Design & Development by Webenlance</a>
+
+				</div>
+
+			</div> 
+
+		</div>
+
+	</div> -->
+
+</div>
+
+	
+	
+<!--===============================================================================================-->
+	<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/animsition/js/animsition.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/bootstrap/js/popper.js"></script>
+	<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/select2/select2.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/daterangepicker/moment.min.js"></script>
+	<script src="vendor/daterangepicker/daterangepicker.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/countdowntime/countdowntime.js"></script>
+<!--===============================================================================================-->
+	<script src="js/main.js"></script>
+
+</body>
+</html>
